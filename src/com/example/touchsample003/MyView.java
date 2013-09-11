@@ -162,11 +162,6 @@ public class MyView extends View {
 		point.x = (int) event.getX(index);
 		point.y = (int) event.getY(index);
 		points.add(point);
-
-		// タッチダウンした瞬間にindexを修正する
-		for (int i = index; i < points.size() - 1; i++) {
-			points.get(i).index++;
-		}
 	}
 
 	/**
